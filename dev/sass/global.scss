@@ -1,12 +1,12 @@
 ::selection {
-    background-color: $secondary-color;
+    background-color: $color-secondary;
 }
-
 
 body {
-    font-family: $font-primary;
+    font-family: 'Proxima Nova';
+    background-color: $bg-primary;
+    color: $text-color;
 }
-
 h1,
 h2,
 h3,
@@ -54,15 +54,16 @@ h6,
 }
 
 .container {
-    max-width: 1170px;
+    max-width: 1140px;
     padding-right: 15px;
-    padding-left: 15px;
+    padding-left: 108px;
     margin-right: auto;
     margin-left: auto;
 }
 
 .container-xxl {
     max-width: 1820px; /*or 1850px???? =)*/
+    color: $text-color;
 }
 
 .wf-300 {
