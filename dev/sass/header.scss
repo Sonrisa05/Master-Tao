@@ -9,7 +9,7 @@ header {
     }
     .navbar-nav {
         margin: 4px auto 0;
-        max-width: 618px;
+        max-width: 612px;
         width: 100%;
         justify-content: space-between;
     }
@@ -31,10 +31,10 @@ header {
         font-weight: 600;
         text-align: center;
         border: none;
-        margin-right: 10px;
+        margin-right: 9px;
         padding: 13px 22px;
-        &:hover {
-            background-color: $color-secondary;
-        }
+            &:hover {
+                background-color: $color-secondary;
+            }
     }
 }
