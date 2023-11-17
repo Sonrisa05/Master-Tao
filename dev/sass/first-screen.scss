@@ -42,7 +42,6 @@
     .first-screen-nav {
         display: flex;
         max-width: 1523px;
-        height: 46px;
         justify-content: space-between;
         position: absolute;
         width: 100%;
@@ -50,17 +49,20 @@
         left: 50%;
         transform: translate(-50%,-50%);
         .slick-arrow {
-            // height: 46px;
+            height: 46px;
             border: none;
             color: transparent;
             background: center transparent no-repeat;
             background-image: url(./assets/img/first-scr-arrow.svg);
+            &:hover,
+            &:active {
+                background-image: url(./assets/img/first-scr-arrow-active);
+            }
         }
-        [type= "button"] {
+        [id="prev"] {
         transform: rotate(180deg);
-        &:hover,
-        &:active {
-            background-image: url(../assets/img/first-scr-arrow-active.svg);
+        [id="next"] {
+
         }
         
         }
