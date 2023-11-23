@@ -63,7 +63,6 @@ h6,
 
 .container-xxl {
     max-width: 1820px; /*or 1850px???? =)*/
-    color: $text-color;
 }
 
 .wf-300 {
@@ -94,14 +93,19 @@ h6,
     line-height: 22px;
     text-align: center;
     border-radius: 90px;
-}
-.btn-primary {
-    background-color: $color-primary;
-    border-color: $color-primary;
-    &:hover,
-    &:active {
-        background-color: $color-secondary;
-        border-color: $color-secondary;
+    &:hover {
+        .icon {
+            filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(49deg) brightness(180%) contrast(101%);
+        }
+    }
+    &.btn-primary {
+        background-color: $color-primary;
+        border-color: $color-primary;
+        &:hover,
+        &:active {
+            background-color: $color-secondary;
+            border-color: $color-secondary;
+        }
     }
 }
 .btn-lg {
@@ -120,5 +124,27 @@ h6,
         top: 18px;
         left: 241px;
         padding: 0.42px;
+    }
+}
+.slick-dots {
+    display: flex;
+    justify-content: space-between;
+    li {
+        font-size: 0;
+        &.slick-active {
+            button {
+                background-color: #fff;
+            }
+        }
+    }
+    button {
+        font-size: 0;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        margin-right: 26px;
+        border: 2px solid #fff;
+        background: transparent;
+        padding: 0;
     }
 }

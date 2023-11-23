@@ -11,10 +11,15 @@
             background-repeat: no-repeat;
         }
         .slick-dots {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            text: none;
+            // display: flex;
+            // flex-direction: row;
+            // justify-content: center;
+            position: absolute;
+            transform: translate(-50%, 0);
+            width: 110px;
+            height: 8px;
+            top: 649px;
+            left: 51%;
         }
         .first-screen-title {
             font-size: 56px;
@@ -56,17 +61,17 @@
             background-image: url(./assets/img/first-scr-arrow.svg);
             &:hover,
             &:active {
-                background-image: url(./assets/img/first-scr-arrow-active);
+                background-image: url(./assets/img/first-scr-arrow-act.svg);
+                &.slick-next {
+                    rotate:180deg;
+                }
+                &.slick-prev {
+                    rotate:180deg;
+                }
             }
         }
-        [id="prev"] {
-        transform: rotate(180deg);
-        [id="next"] {
-
+        .slick-prev {
+            transform: rotate(180deg);
         }
-        
-        }
-
     }
 }
-

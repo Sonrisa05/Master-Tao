@@ -1,12 +1,24 @@
 $(document).ready(function () {
     $('.first-screen-slider').slick({
         dots: true,
+        infinite:true,
+        speed:300,
+        slidesToScroll: 1,
+        slidesToShow: 1,
+        responsive: [
+            {
+                breakpoint:1024,
+                settings: {
+                    slidesToShow:4,
+                    slidesToScroll:1,
+                    infinite:true,
+                    dots:true,
+                }
+            }
+        ],
         appendArrows:'.first-screen-nav',
-        prevArrow: '<button id="prev" type="button" class="btn btn-juliet"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>',
-        nextArrow: '<button id="next" type="button" class="btn btn-juliet"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>'
     });
 })
-
 
 const burger = document.querySelector ('.hamburger');
 burger.addEventListener ('click', function() {
